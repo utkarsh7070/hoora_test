@@ -21,7 +21,31 @@ final servicesProvider = FutureProvider<List<Service>>((ref) async {
 final hiveProvider = Provider((ref) => HiveService());
 
 
-final favoritesProvider = StateProvider<Set<int>>((ref) {
-  final hive = ref.read(hiveProvider);
-  return hive.getFavorites().toSet();
-});
+final favoritesProvider = StateNotifierProvider<FavoritesNotifier, Set<int>>(
+      (ref) {
+        final hive = ref.read(hiveProvider);
+       return FavoritesNotifier(hive);
+
+      }
+);
+
+class FavoritesNotifier extends StateNotifier<Set<int>> {
+  final HiveService hiveService;
+
+  FavoritesNotifier(this.hiveService)
+      : super(hiveService.getFavorites().toSet());
+
+  void toggle(int serviceId) {
+    hiveService.toggleFavorite(serviceId);
+    state = hiveService.getFavorites().toSet();
+  }
+
+  bool isFavorite(int serviceId) {
+    return state.contains(serviceId);
+  }
+}
+
+// final favoritesProvider = StateProvider<Set<int>>((ref) {
+//   final hive = ref.read(hiveProvider);
+//   return hive.getFavorites().toSet();
+// });

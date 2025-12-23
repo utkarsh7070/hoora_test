@@ -6,9 +6,19 @@ class HiveService {
 
   bool isFavorite(int id) => box.get(id.toString(), defaultValue: false);
 
+  void addFavorite(int serviceId) {
+    box.put(serviceId.toString(), true);
+  }
 
-  void toggleFavorite(int id) {
-    box.put(id.toString(), !isFavorite(id));
+  void removeFavorite(int serviceId) {
+    box.delete(serviceId.toString());
+  }
+  void toggleFavorite(int serviceId) {
+    if (isFavorite(serviceId)) {
+      removeFavorite(serviceId);
+    } else {
+      addFavorite(serviceId);
+    }
   }
 
 
