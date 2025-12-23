@@ -29,11 +29,7 @@ This project implements a **Favorite Services** feature using Flutter and Riverp
 ### Install dependencies
 ```bash
 flutter pub get
-
-## 📽 Demo Video
-
-[![Watch the demo]([https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID](https://drive.google.com/file/d/12SzEyorGC-SU2AEpoJSWMccHs0kIGPj6/view?usp=drivesdk))
-
+```
 
 ### Prerequisites
 - Flutter 3.x+
@@ -42,3 +38,7 @@ flutter pub get
 ### Install dependencies
 ```bash
 flutter pub get
+```
+## Demo Video
+
+[![Watch the demo]([https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID](https://drive.google.com/file/d/12SzEyorGC-SU2AEpoJSWMccHs0kIGPj6/view?usp=drivesdk))
