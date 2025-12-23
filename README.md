@@ -1,16 +1,44 @@
-# hoora_test
+# Favorite Services – Flutter Assignment
 
-A new Flutter project.
+This project implements a **Favorite Services** feature using Flutter and Riverpod.
+
+## Features
+- Fetch services from API (`GET /services`)
+- Favorite / unfavorite services
+- Persistent favorites using Hive
+- Tabbed UI: All Services / Favorites
+- Optimized for large lists
+- Unit, widget, and integration tests
+
+---
+
+## Tech Stack
+- Flutter
+- Riverpod (State Management)
+- Hive (Local Persistence)
+- Dio (API – mocked)
+- Flutter Test / Integration Test
+
+---
 
 ## Getting Started
+### Prerequisites
+- Flutter 3.x+
+- Dart 3.x+
 
-This project is a starting point for a Flutter application.
+### Install dependencies
+```bash
+flutter pub get
 
-A few resources to get you started if this is your first Flutter project:
+## 📽 Demo Video
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+[![Watch the demo]([https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID](https://drive.google.com/file/d/12SzEyorGC-SU2AEpoJSWMccHs0kIGPj6/view?usp=drivesdk))
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+### Prerequisites
+- Flutter 3.x+
+- Dart 3.x+
+
+### Install dependencies
+```bash
+flutter pub get
